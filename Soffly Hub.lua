@@ -4696,9 +4696,9 @@ local settings_tbl = {
     ESP_Enabled = true,
     ESP_TeamCheck = false,
     Chams = true,
-    Chams_Color = Color3.fromRGB(173,255,47),
+    Chams_Color = Color3.fromRGB(93,65,230),
     Chams_Transparency = 0.1,
-    Chams_Glow_Color = Color3.fromRGB(255, 80, 60)
+    Chams_Glow_Color = Color3.fromRGB(93,65,230)
 }
 
 function destroy_chams(char)
@@ -4850,7 +4850,7 @@ local function DrawESP(plr)
     Box.PointB = Vector2.new(0, 0)
     Box.PointC = Vector2.new(0, 0)
     Box.PointD = Vector2.new(0, 0)
-    Box.Color = Color3.fromRGB(255, 80, 60)
+    Box.Color = Color3.fromRGB(255,255,255)
     Box.Thickness = 2
     Box.Transparency = 1
 
@@ -4926,7 +4926,7 @@ Page.Button({
 
 local esp_settings = { ---- table for esp settings 
     textsize = 11,
-    colour = 255,80,60
+    colour = 93,65,230
 }
 
 local gui = Instance.new("BillboardGui")
@@ -4939,7 +4939,7 @@ gui.ResetOnSpawn = false
 gui.AlwaysOnTop = true;
 gui.LightInfluence = 0;
 gui.Size = UDim2.new(1.75, 0, 1.75, 0);
-esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+esp.BackgroundColor3 = Color3.fromRGB(93,65,230);
 esp.Text = ""
 esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
 esp.BorderSizePixel = 4;
@@ -4967,7 +4967,7 @@ Page.Button({
 
 local esp_settings = { ---- table for esp settings 
     textsize = 11,
-    colour = 255,80,60
+    colour = 93,65,230
 }
 
 local gui = Instance.new("BillboardGui")
@@ -4980,7 +4980,7 @@ gui.ResetOnSpawn = false
 gui.AlwaysOnTop = true;
 gui.LightInfluence = 0;
 gui.Size = UDim2.new(1.75, 0, 1.75, 0);
-esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+esp.BackgroundColor3 = Color3.fromRGB(93,65,230);
 esp.Text = ""
 esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
 esp.BorderSizePixel = 4;
