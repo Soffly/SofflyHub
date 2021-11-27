@@ -4622,8 +4622,8 @@ end
 local UI = Material.Load({
      Title = "Soffly Hub",
      Style = 12,
-     SizeX = 260,
-     SizeY = 255,
+     SizeX = 280,
+     SizeY = 280,
      Theme = "SofflyColor"
 })
 
@@ -4636,7 +4636,7 @@ local Page = UI.New({
 })
 
 Page.Button({
-    Text = "Version: 1.0.12",
+    Text = "Version: 1.0.18",
     Callback = function()
 
 
@@ -4696,9 +4696,9 @@ local settings_tbl = {
     ESP_Enabled = true,
     ESP_TeamCheck = false,
     Chams = true,
-    Chams_Color = Color3.fromRGB(93,65,230),
+    Chams_Color = Color3.fromRGB(255,255,0),
     Chams_Transparency = 0.1,
-    Chams_Glow_Color = Color3.fromRGB(93,65,230)
+    Chams_Glow_Color = Color3.fromRGB(255,0,0)
 }
 
 function destroy_chams(char)
@@ -4925,8 +4925,8 @@ Page.Button({
     Callback = function()
 
 local esp_settings = { ---- table for esp settings 
-    textsize = 11,
-    colour = 93,65,230
+    textsize = 12,
+    colour = 255,0,0
 }
 
 local gui = Instance.new("BillboardGui")
@@ -4966,8 +4966,8 @@ Page.Button({
     Callback = function()
 
 local esp_settings = { ---- table for esp settings 
-    textsize = 11,
-    colour = 93,65,230
+    textsize = 12,
+    colour = 255,0,0
 }
 
 local gui = Instance.new("BillboardGui")
@@ -5190,6 +5190,7 @@ local Page = UI.New({
 Page.Button({
     Text = "Noclip",
     Callback = function()
+
 noclip = false
 game:GetService('RunService').Stepped:connect(function()
 if noclip then
@@ -5215,6 +5216,26 @@ Title = "Noclip";
 Text = "Press F To Noclip";
 Duration = "10";
 })
+
+    end
+})
+
+local Page = UI.New({
+    Title = "Infinite Jump",
+
+
+})
+
+Page.Button({
+    Text = "Infinite Jump",
+    Callback = function()
+
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
 
     end
 })
