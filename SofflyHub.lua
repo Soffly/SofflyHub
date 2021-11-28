@@ -1,19 +1,5 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-local w = library:CreateWindow("Soffly Hub (BETA)")
-
-local b = w:CreateFolder("Version")
-
-b:Button("v1.0.0",function()
-    print("Elym Winning")
-end)
-
-local b = w:CreateFolder("Owner")
-
-b:Button("Soffly#7676",function()
-    print("Elym Winning")
-end)
-
 local w = library:CreateWindow("Esp")
 
 local b = w:CreateFolder("Body Esp")
@@ -322,7 +308,7 @@ end)
     print("Elym Winning")
 end)
 
-local w = library:CreateWindow("Aimbot")
+local w = library:CreateWindow("Aim")
 
 local b = w:CreateFolder("Aimbot")
 
