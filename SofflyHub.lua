@@ -2315,7 +2315,7 @@ Page.Button({
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-local w = library:CreateWindow("Visualsp")
+local w = library:CreateWindow("Visuals")
 
 local b = w:CreateFolder("Body Esp")
 
@@ -2964,12 +2964,6 @@ Text = "Press F To Noclip";
 Duration = "10";
 })
     print("Elym Winning")
-end)
-
-b:Toggle("Fly",function(bool)
-    shared.toggle = bool
-
-    print(shared.toggle)
 end)
 
 local b = w:CreateFolder("Close")
