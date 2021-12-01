@@ -1,0 +1,6 @@
+--Scripts:
+
+--Script (1)
+lualoadstring(game:HttpGet("https://raw.githubusercontent.com/Soffly/SofflyHub/main/SofflyHub.lua"))()
+
+--Script (2)
